@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 206, 206);
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*TYPHOGRAPHYYYYYYYYYYYY*/
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.section1 h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.section1 h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.section1 p {
+    color: hsl(0, 0%, 82%);
+    font-size: 1.3rem;
+    
+}
+
+.section2 {
+    color: white;
+}
+
+.section2 p {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.section2 span {
+    color: hsl(217, 22%, 77%);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.section2 h3 {
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+/*END OF TYPHOGRAPHYYYYYYYYYYYY*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section1, .section2, .section3 {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    margin: 0 50px;
+    padding: 20px 50px;
+}
+
+.section1 {
+    margin-top: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.section2 {
+    background-color: hsl(179, 62%, 43%);
+
+}
+
+.btn-sign {
+    font-size: 1.3rem;
+    background-color: hsl(71, 73%, 54%);
+    border: 2px solid transparent;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.btn-sign:hover {
+    background-color: transparent;
+    border: 2px solid hsl(71, 73%, 54%);;
+}
+
+.section3 {
+    color: white;
+    background-color: hsl(179, 68%, 45%);
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.section3 p {
+    width: 70%;
+}
+
+@media (min-width: 800px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .section1, .section2, .section3 {
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        margin: 0;
+        padding: 30px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .section2 {
+        border-bottom-left-radius: 10px;
+
+    }
+    .section2, .section3{
+        width: 50%;
+        padding: 25px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .section3 {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+}
